@@ -493,7 +493,7 @@ function createBot() {
       botState.reconnectAttempts = 0;
       isReconnecting = false;
 
-      console.log(`[Bot] [+] Successfully spawned on server!`);
+      console.log(`[Bot] [+] Successfully spawned on server! (Version: ${bot.version})`);
       if (config.discord && config.discord.events && config.discord.events.connect) {
         sendDiscordWebhook(`[+] **Connected** to \`${config.server.ip}\``, 0x4ade80);
       }
